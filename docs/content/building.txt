@@ -22,7 +22,7 @@ To build the Java5 version, check out the java1.5 branch and build:
     # ant
 <% end -%>
 
-Note: If you get errors during the build about various things related to javax.servlet, try setting the $CATALINA_HOME environment variable to a directory containing the servlet-api.jar. For example:
+Note: If you get errors during the build about various things related tojakarta.servlet, try setting the $CATALINA_HOME environment variable to a directory containing the servlet-api.jar. For example:
 
 <% coderay :lang => 'bash', :line_numbers => nil do -%>
     # export CATALINA_HOME=/usr/apache-tomcat-6.0.29
