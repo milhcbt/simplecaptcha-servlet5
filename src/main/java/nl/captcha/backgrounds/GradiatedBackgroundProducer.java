@@ -17,11 +17,13 @@ import java.awt.image.BufferedImage;
  */
 public class GradiatedBackgroundProducer implements BackgroundProducer {
 
-    private Color _fromColor = Color.DARK_GRAY;
-    private Color _toColor = Color.WHITE;
-    
+    private static final Color DEFAULT_FROM_COLOR = new Color(0,255,0);
+    private static final Color DEFAULT_TO_COLOR = new Color(255, 255, 255);
+    private Color _fromColor;
+    private Color _toColor;
+
     public GradiatedBackgroundProducer() {
-        this(Color.DARK_GRAY, Color.WHITE);
+        this( DEFAULT_FROM_COLOR, DEFAULT_TO_COLOR);
     }
     
     public GradiatedBackgroundProducer(Color from, Color to) {

@@ -10,3 +10,4 @@ stacktrace.log
 .classpath
 target/
 .vscode/
+.idea/
